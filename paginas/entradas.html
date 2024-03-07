@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas</title>
+    <link rel="stylesheet" type="text/css" href="../Estilos/entradas.css">
+    <link rel="stylesheet" type="text/css" href="../estilos/global.css">
+    <link rel="icon" href="../imagenes/svg/logo.svg">
+    <script src="../funciones/entrada.js"></script>
+</head>
+
+<body onload="header(), footer()">
+    <header id="EntradasH"></header>
+    <div id="caja-formulario">
+
+        <form id="form-entradas" action="#" onsubmit="return Total()" method="post">
+            <div id="menores">
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
+
+                <div id="contmenor">
+                    <h1>Menores ($13.000)</h1>
+                    <h4>Menores entre 5 a 10 años</h4>
+                    <label for="cantmenor">Ingrese la cantidad de entradas</label><br>
+                    <input type="" id="cantmenor" name="cantmenor">
+                    <span id="errormenor"></span>
+                </div>
+            </div>
+            <div id="mayores">
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
+
+                <div id="contmayor">
+                    <h1>Mayores ($16.000)</h1>
+                    <h4>Mayores entre 11 a 65 años</h4>
+                    <label for="cantmayor">Ingrese la cantidad de entradas</label>
+                    <input type="" id="cantmayor" name="cantmayor">
+                    <span id="errormayor"></span>
+                </div>
+            </div>
+            <div id="jubilados">
+                <div class="imagen"><img src="../imagenes/ilustraciones/Burbuja1.png"></div>
+                <div id="contjubilados">
+                    <h1>Jubilados ($13.000)</h1>
+                    <h4>Mayores de 65 años</h4>
+                    <label for="cantjubilados">Ingrese la cantidad de entradas</label>
+                    <input type="" id="cantjubilados" name="cantjubilados">
+                    <span id="errorjubilado"></span>
+                </div>
+            </div>
+            <div id="boton">
+                <img src="../imagenes/ilustraciones/Estrella.png">
+                <button type="submit" id="pago">Total a Pagar:</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!--- footer -->
+    <footer id="EntradasF"></footer>
+
+</body>
+
+<script src="../funciones/headfoot.js"></script>
+
+</html>

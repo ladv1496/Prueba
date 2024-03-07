@@ -1,0 +1,95 @@
+
+
+#caja-formulario {
+    background-color:#d2e9ff;;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('../imagenes/ilustraciones/Cabeza.png');
+    
+    background-position: center;
+    background-size: cover;
+    animation: changeSaturation 10s infinite;
+}
+
+@keyframes changeSaturation {
+  0% { filter: saturate(100%); }
+  50% { filter: saturate(50%); }
+  100% { filter: saturate(100%); }
+}
+/*
+@font-face {
+    font-family: "sirena";
+    src: url(../otros/font/Mermaid1001.ttf);
+}*/
+
+h1, h4 {
+    text-align: left;
+    display: block;
+    font-family: "sirena", sans-serif;
+    
+}
+
+form {
+   
+    max-width: 100%;
+    margin: auto;
+}
+
+div {
+    margin-bottom: 20px;
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: "sirena", sans-serif;
+}
+
+input:focus{
+    background-color: #6cb6ff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "sirena", sans-serif;
+}
+
+
+img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    position:relative;
+    text-align: center;
+}
+
+
+#boton, #caja-formulario{
+    display: flex;
+}
+
+span{
+    background-color: red;
+    font-size: 16px;
+    display: block;
+}
+

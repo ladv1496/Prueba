@@ -1,0 +1,91 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #d2e9ff;
+}
+
+img#sfoot {
+    max-width: min-content;
+    width: 100%;
+    height: 100%;
+}
+
+hr#hfoot {
+    clear: both;
+    color: #1e8fff;
+    border-style: solid;
+    height: 0.001px;
+}
+
+div.topnav {
+    background-image: url(imagenes/ilustraciones/Cabeza.png);
+    background-size: 100%;
+    background-color:#6cb6ff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+}
+
+div.topnav a {
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Mermaid;
+    font-size: 30px;
+    text-shadow: 2px 2px black;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-decoration: none;
+}
+
+div.topnav a:hover {
+    transition: 0.3s ease-in-out;
+    color: #2466a8;
+    background-image: url(imagenes/ilustraciones/pezcabeza.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-shadow: none;
+}
+
+div.topnav a.active {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+    color: black;
+    text-shadow: none;
+    background-image: none;
+}
+
+div.topnav img {
+  width: 10%;
+  height: 10%;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+}
+
+div.social {
+    text-align: left;
+}
+
+div.social img.social {
+    max-height: 10%;
+    height: 2%;
+    width: 2%;
+    padding-left: 1%;
+}
+
+img.logo {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 30px;
+    width: 10%;
+}

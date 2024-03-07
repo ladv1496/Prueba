@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../estilos/global.css">
+  <link rel="icon" href="../imagenes/svg/logo.svg" />
+  <link rel="stylesheet" href="../estilos/contacto.css" />
+  <title>Contacto</title>
+</head>
+
+<body onload="header(), footer()">
+  <header id="ContactoH"></header>
+  <div id="caja-formulario">
+    <h1 id="h1-contacto">Contacto</h1>
+
+    <img src="../imagenes\ilustraciones\Pulpo.png" alt="">
+    <div id="text">Ya sea por una razón u otra, nuestro sitio está disponible para que usted pueda contactarse.
+      <br>Ingrese sus datos y un colaborador se estará comunicando a más tardar, nunca.
+    </div>
+    <br>
+    <form id="formulario-contacto" method="post" action="#" onsubmit="">
+      <div class="cajasInputs">
+        <label for="nombre">Nombre: <span id="obligatory">*</span></label>
+        <input type="text" id="nombre" placeholder="Ingrese su nombre" onkeydown=keypressempty1()
+          onkeyup=keypressempty1() />
+      </div>
+
+      <div class="cajasInputs">
+        <label for="email">Email: <span id="obligatory">*</span></label>
+        <input type="text" id="email" placeholder="Ingrese su email" onkeydown=keypressemail()
+          onkeyup=keypressemail() />
+      </div>
+
+      <div class="cajasInputs">
+        <label for="telefono">Teléfono: <span id="obligatory">*</span></label>
+        <input type="text" id="telefono" placeholder="Ingrese su teléfono" onkeydown=keypresstel()
+          onkeyup=keypresstel() />
+      </div>
+
+      <div class="cajasInputs">
+        <label for="mensaje">Mensaje: <span id="obligatory">*</span></label>
+        <textarea id="mensaje" placeholder="Escriba su mensaje" onkeydown=keypressempty2()
+          onkeyup=keypressempty2()></textarea>
+      </div>
+
+      <input type="submit" name="botonEnviar" id="botonFormulario" value="Enviar" />
+    </form>
+  </div>
+  <script src="../funciones/contacto.js"></script>
+
+  <!--- footer -->
+  <footer id="ContactoF"></footer>
+</body>
+
+<script src="../funciones/headfoot.js"></script>
+
+</html>
