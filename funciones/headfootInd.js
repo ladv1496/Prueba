@@ -1,6 +1,6 @@
 let links = [{
     link: "/index.html", name: "Inicio"
-}, { link: "paginas/entradas.html", name: "Entradas" },
+}, { link: "/paginas/entradas.html", name: "Entradas" },
 { link: "paginas/contacto.html", name: "Contacto" }, { link: "paginas/juegomenu.html", name: "Actividades" }
 ]
 
