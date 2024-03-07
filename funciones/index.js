@@ -1,5 +1,5 @@
-arrayimg = ["imagenes\png-jpg\edificio2.jpg", "imagenes\png-jpg\Ballena Beluga.jpg",
-    "imagenes\png-jpg\edificio1.png"]
+arrayimg = ["../imagenes/png-jpg/edificio2.jpg", "./imagenes/png-jpg/Ballena Beluga.jpg",
+    "/imagenes/png-jpg/edificio1.png"]
 
 i = 0
 
