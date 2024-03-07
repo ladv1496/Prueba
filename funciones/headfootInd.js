@@ -16,7 +16,7 @@ function header() {
     head.appendChild(div1)
     //make img
     let div2 = document.createElement("img")
-    div2.setAttribute("src", "../imagenes/png-jpg/logo trans.png")
+    div2.setAttribute("src", "imagenes/png-jpg/logo trans.png")
     div2.setAttribute("id", "mainlogo")
     div1.appendChild(div2)
     //make links
