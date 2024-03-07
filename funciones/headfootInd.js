@@ -1,7 +1,7 @@
 let links = [{
     link: "/index.html", name: "Inicio"
-}, { link: "../paginas/entradas.html", name: "Entradas" },
-{ link: "../paginas/contacto.html", name: "Contacto" }, { link: "../paginas/juegomenu.html", name: "Actividades" }
+}, { link: "paginas/entradas.html", name: "Entradas" },
+{ link: "paginas/contacto.html", name: "Contacto" }, { link: "paginas/juegomenu.html", name: "Actividades" }
 ]
 
 let social = ["imagenes/png-jpg/logos/LogoYT.png", "imagenes/png-jpg/logos/LogoTwit.png", "imagenes/png-jpg/logos/LogoInsta.png"]
