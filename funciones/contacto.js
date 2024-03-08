@@ -1,15 +1,3 @@
-function clear() {
-    let nombre = document.getElementById("nombre")
-    let email = document.getElementById("email")
-    let telefono = document.getElementById("telefono")
-    let mensaje = document.getElementById("mensaje")
-
-    nombre.value = ""
-    email.value = ""
-    telefono.value = ""
-    mensaje.value = ""
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     // Agrega listener al boton de envío del formulario
     document.getElementById("formulario-contacto").addEventListener("submit", function (event) {
@@ -55,63 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Si la validación es exitosa, enviar el formulario
         alert("Se ha enviado correctamente.");
-        document.getElementById("formulario-contacto").submit();
-        clear()
+        // Muestra los datos enviados
+        mostrarDatosEnviados(nombre, email, telefono, mensaje);
+        // Limpia el formulario
+        clear();
     });
 });
 
-function keypressemail() {
-    let email = document.getElementById("email").value.trim();
-
-    let patronEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!patronEmail.test(email)) {
-        email = document.getElementById("email")
-        console.log("eh")
-        email.style.backgroundColor = "#ffaea8"
-    } else if (patronEmail.test(email)) {
-        console.log("yay")
-        email = document.getElementById("email")
-        email.style.backgroundColor = "white"
-    }
-
-    email = document.getElementById("email")
-    if (email.value == "") {
-        email.style.backgroundColor = "white"
-    }
-
+function mostrarDatosEnviados(nombre, email, telefono, mensaje) {
+    let datosEnviados = document.createElement("div");
+    datosEnviados.innerHTML = "<h2>Datos Enviados</h2>";
+    datosEnviados.innerHTML += "<p>Nombre: " + nombre + "</p>";
+    datosEnviados.innerHTML += "<p>Email: " + email + "</p>";
+    datosEnviados.innerHTML += "<p>Teléfono: " + telefono + "</p>";
+    datosEnviados.innerHTML += "<p>Mensaje: " + mensaje + "</p>";
+    document.getElementById("caja-formulario").appendChild(datosEnviados);
 }
-
-function keypresstel() {
-    let telefono = document.getElementById("telefono").value.trim();
-    let patronTelefono = /^\d+$/;
-
-    if (!patronTelefono.test(telefono)) {
-        telefono = document.getElementById("telefono")
-        telefono.style.backgroundColor = "#ffaea8"
-    } else if (patronTelefono.test(telefono)) {
-        telefono = document.getElementById("telefono")
-        telefono.style.backgroundColor = "white"
-    }
-    telefono = document.getElementById("telefono")
-    if (telefono.value == "") {
-        telefono.style.backgroundColor = "white"
-    }
-
-}
-
-function keypressempty1() {
-    let nombre = document.getElementById("nombre")
-    if (nombre.value == "") {
-        nombre.style.backgroundColor = "white"
-    }
-
-}
-
-function keypressempty2() {
-    let mensaje = document.getElementById("mensaje")
-    if (mensaje.value == "") {
-        mensaje.style.backgroundColor = "white"
-    }
-
-}
-
