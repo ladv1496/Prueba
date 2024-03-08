@@ -4,7 +4,7 @@ div#main1 {
     margin-right: auto;
     border-radius: 50px;
     background-color: #62d395;
-    background-image: url(/imagenes/png-jpg/bg1.png);
+    background-image: url(../imagenes/png-jpg/bg1.png);
     background-size: 100%;
     width: 600px;
     text-align: center;
@@ -30,7 +30,7 @@ div#main2 {
     float: left;
     border-radius: 5px;
     background-color: #e2b26a;
-    background-image: url(/imagenes/png-jpg/bg2.png);
+    background-image: url(../imagenes/png-jpg/bg2.png);
     background-size: 100%;
     max-width: max-content;
     width: 45%;
@@ -54,7 +54,7 @@ div#main3 {
     float: right;
     border-radius: 5px;
     background-color: #e26a6a;
-    background-image: url(/imagenes/png-jpg/bg3.png);
+    background-image: url(../imagenes/png-jpg/bg3.png);
     background-size: 100%;
     max-width: max-content;
     width: 45%;
